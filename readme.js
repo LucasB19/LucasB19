@@ -1,29 +1,33 @@
 module.exports = `### Hey ! 👋 Nice to meet you !
 
-Welcome to my GitHub world, where coding meets creativity and innovation.
+### Hey! 👋 Nice to meet you!
 
-Here, you'll find projects that showcase my skills in various programming languages, my interest in machine learning and data science, and my passion for building efficient and meaningful software.
+myname = "Lucas"  
+print(f"I am {myname} - The Coder Dribbling with Functions")
 
-### 🧠 Who am I? A Developer with a knack for problem-solving and a love for technology.
+Welcome to my GitHub world, where coding is as smooth as a Stephen Curry's 3-point shot. Here, life's challenges are tackled with a try {} catch (the ball) {} approach.
 
-- **Passionate about Sports**: As a huge sports fan, I dedicate my free time to analyzing and visualizing sports data, aiming to score with every project I undertake.
-- **AI Innovator**: Fascinated by the power of AI, I dive into projects that leverage Machine Learning for practical applications, always aiming to push the boundaries of what's possible.
-- **Creative Developer**: Creativity is at the heart of my projects. I strive to design applications that not only solve problems but also engage and inspire users.
+### 🧠 Who am I ? A mix of Einstein and Michael Jordan.
 
-### 🚀 My Projects: Where code meets creativity.
+<b> Passionate about Sports: </b> As a huge sports fan, especially basketball, I dedicate my free time to analyzing and visualizing sports data, aiming to be the star of the next sports debate.
 
-(Here, you could list your projects or describe them briefly.)
+<b> AI Innovator: </b> Fascinated by AI's potential, I engage in projects leveraging Machine Learning for practical applications, from sports predictions to smart personal assistants.
 
-### 📬 Let's Connect:
+<b> Creative Developer: </b> I love creating apps that ease daily life while adding a touch of fun. My toolkit includes Python for data analysis and Machine Learning, JavaScript for interactive web apps, and more. My latest project? A tool to predict when my jokes will hit the mark. Spoiler: the results are... variable.
 
-Whether you're interested in discussing technology, sharing ideas, or collaborating on a project, I'm all ears. Reach out and let's make something great together!
+### 🚀 My Projects: A triple-double in Programming, Problem Solving, and Creativity.
 
-- **Email**: [...]
-- **LinkedIn**: [...]
-- **Twitter**: [...]
+### 📬 Contact me - Pass the Ball, Make the Assist of the Year. 
 
-Last update on **<#today_date>**.
+If you want to discuss programming, AI, or have hot basketball stats to share, I'm all ears. Here's how you can pass me the ball:
+
+* <b> Email: </b> [...] (for project collaborations)
+* <b> LinkedIn: </b> [...] (for professional networking)
+* <b> Twitter: </b> [...] (for quick info passes and insights)
+
+If you have ideas or projects mixing coding and basketball, I'm ready to jump into the game! 🏀💻
+
+Last update on <b> <#today_date> </b>
 
 <#gabot_signing>
 `;
-
