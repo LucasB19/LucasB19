@@ -1,7 +1,5 @@
 module.exports = `### Hey ! 👋 Nice to meet you !
 
-### Hey! 👋 Nice to meet you!
-
 myname = "Lucas"  
 print(f"I am {myname} - The Coder Dribbling with Functions")
 
