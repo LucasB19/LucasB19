@@ -2,7 +2,7 @@ name: Update README
 
 on:
   schedule:
-    - cron: '30 6 * * 1-5' # S'exécute tous les jours à minuit
+    - cron: '30 6 * * 1-5' # S'exécute à 06:30 les jours de semaine
 
 jobs:
   update-readme:
@@ -17,9 +17,14 @@ jobs:
       run: npm install
     - name: Update README
       run: node index.js
+    - name: Setup Git Identity
+      run: |
+        git config --global user.email "ld.berry@outlook.com"
+        git config --global user.name "LucasB19"
     - name: Commit and Push if needed
       run: |
-        git config --global user.email "ld.berry@outlook.com
-        git config --global user.name "LucasB19"
-        git commit -am "Update README" || echo "No changes to commit"
+        git add README.md
+        git commit -m "Update README" || echo "No changes to commit"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
