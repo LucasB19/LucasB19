@@ -23,11 +23,12 @@ jobs:
         run: node index.js
 
       - name: Commit and Push Changes
-        run: |
-          git config --global user.email "your-email@example.com"
-          git config --global user.name "your-github-username"
-          git add README.md
-          git commit -m "Automatically update README" || echo "No changes to README"
-          git push
+        uses: EndBug/add-and-commit@v4
+        with:
+          author_name: your-github-username
+          author_email: your-email@example.com
+          message: "Automatically update README"
+          add: "README.md"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
