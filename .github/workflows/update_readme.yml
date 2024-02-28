@@ -2,7 +2,7 @@ name: Update README
 
 on:
   schedule:
-    - cron: '00 11 * * 1-5' # S'exécute à 06:30 UTC les jours de semaine
+    - cron: '45 9 * * 1-5' # S'exécute à 06:30 UTC les jours de semaine
 
 jobs:
   update-readme:
@@ -23,10 +23,10 @@ jobs:
         run: node index.js
 
       - name: Commit and Push Changes
-        uses: EndBug/add-and-commit@v4
+        uses: EndBug/add-and-commit@v4.x
         with:
-          author_name: your-github-username
-          author_email: your-email@example.com
+          author_name: LucasB19
+          author_email: ld.berry@outlook.com
           message: "Automatically update README"
           add: "README.md"
         env:
