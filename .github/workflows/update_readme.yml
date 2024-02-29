@@ -2,7 +2,7 @@ name: Update README
 
 on:
   schedule:
-    - cron: '00 10 * * 1-5' # S'exécute à 10:00 UTC les jours de semaine
+    - cron: '30 11 * * 1-5' # S'exécute à 10:00 UTC les jours de semaine
 
 permissions:
   contents: write
