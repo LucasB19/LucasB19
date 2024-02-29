@@ -2,7 +2,13 @@ name: Update README
 
 on:
   schedule:
-    - cron: '00 10 * * 1-5' # S'exécute à 06:30 UTC les jours de semaine
+    - cron: '00 10 * * 1-5' # S'exécute à 10:00 UTC les jours de semaine
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  # Ajoutez d'autres permissions selon les besoins
 
 jobs:
   update-readme:
@@ -31,4 +37,3 @@ jobs:
           add: "README.md"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
